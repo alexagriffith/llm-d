@@ -61,7 +61,7 @@ istiod-xxxxxxxxxx-xxxxx   1/1     Running   0          30s
 Create a `Gateway` resource. Istio watches this resource and creates an Envoy-based proxy that accepts incoming traffic.
 
 ```bash
-kubectl apply -k ./guides/recipes/gateway/istio -n ${NAMESPACE}
+kubectl apply -k https://github.com/llm-d/llm-d/guides/recipes/gateway/istio?ref=main -n ${NAMESPACE}
 ```
 
 Verify the Gateway is programmed:

@@ -44,7 +44,7 @@ The key choice for deployment is whether you want an internal or external load b
 The class name is `gke-l7-regional-external-managed`. They are accessible to the internet. Here is an example for creating one:
 
 ```bash
-kubectl apply -n ${NAMESPACE} -k "./guides/recipes/gateway/gke-l7-regional-external-managed"
+kubectl apply -n ${NAMESPACE} -k "https://github.com/llm-d/llm-d/guides/recipes/gateway/gke-l7-regional-external-managed?ref=main"
 ```
 
 ### Regional Internal Application Load Balancer
@@ -52,7 +52,7 @@ kubectl apply -n ${NAMESPACE} -k "./guides/recipes/gateway/gke-l7-regional-exter
 The class name is `gke-l7-rilb`. They are accessible only to workloads within your VPC. Here is an example for creating one:
 
 ```bash
-kubectl apply -n ${NAMESPACE} -k "./guides/recipes/gateway/gke-l7-rilb"
+kubectl apply -n ${NAMESPACE} -k "https://github.com/llm-d/llm-d/guides/recipes/gateway/gke-l7-rilb?ref=main"
 ```
 
 ## Step 3: Verify the Gateway

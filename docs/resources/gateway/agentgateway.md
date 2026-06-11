@@ -77,7 +77,7 @@ agentgateway   agentgateway.dev/agentgateway   True       30s
 This deploys a gateway suitable for `agentgateway`, using the `agentgateway` gateway class. This is the preferred self-installed inference gateway recipe in llm-d.
 
 ```bash
-kubectl apply -k ./guides/recipes/gateway/agentgateway -n ${NAMESPACE}
+kubectl apply -k https://github.com/llm-d/llm-d/guides/recipes/gateway/agentgateway?ref=main -n ${NAMESPACE}
 ```
 
 ### Agentgateway (OpenShift)
@@ -87,7 +87,7 @@ recipe. The rendered `Gateway` uses the `agentgateway` GatewayClass and an
 OpenShift-oriented `AgentgatewayParameters` resource.
 
 ```bash
-kubectl apply -k ./guides/recipes/gateway/agentgateway-openshift -n ${NAMESPACE}
+kubectl apply -k https://github.com/llm-d/llm-d/guides/recipes/gateway/agentgateway-openshift?ref=main -n ${NAMESPACE}
 ```
 
 Verify the `Gateway` is programmed:
